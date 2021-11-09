@@ -11,6 +11,8 @@
 		B563BAF6273A50AC00DA9D23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BAF5273A50AC00DA9D23 /* ContentView.swift */; };
 		B563BAF8273A50AE00DA9D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B563BAF7273A50AE00DA9D23 /* Assets.xcassets */; };
 		B563BAFB273A50AE00DA9D23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B563BAFA273A50AE00DA9D23 /* Preview Assets.xcassets */; };
+		B563BB02273A52A100DA9D23 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BB01273A52A100DA9D23 /* ButtonView.swift */; };
+		B563BB04273A5F4600DA9D23 /* UIKitSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BB03273A5F4600DA9D23 /* UIKitSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		B563BAF5273A50AC00DA9D23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B563BAF7273A50AE00DA9D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B563BAFA273A50AE00DA9D23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B563BB01273A52A100DA9D23 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		B563BB03273A5F4600DA9D23 /* UIKitSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +55,10 @@
 		B563BAF2273A50AC00DA9D23 /* UIKitSliderInSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				B563BAF3273A50AC00DA9D23 /* UIKitSliderInSwiftUIApp.swift */,
-				B563BAF5273A50AC00DA9D23 /* ContentView.swift */,
-				B563BAF7273A50AE00DA9D23 /* Assets.xcassets */,
+				B563BB05273AE97100DA9D23 /* App */,
+				B563BB06273AE97E00DA9D23 /* Views */,
+				B563BB08273AE9BD00DA9D23 /* UIKitElements */,
+				B563BB07273AE98C00DA9D23 /* Resources */,
 				B563BAF9273A50AE00DA9D23 /* Preview Content */,
 			);
 			path = UIKitSliderInSwiftUI;
@@ -65,6 +70,39 @@
 				B563BAFA273A50AE00DA9D23 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B563BB05273AE97100DA9D23 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B563BAF3273A50AC00DA9D23 /* UIKitSliderInSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B563BB06273AE97E00DA9D23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B563BAF5273A50AC00DA9D23 /* ContentView.swift */,
+				B563BB01273A52A100DA9D23 /* ButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B563BB07273AE98C00DA9D23 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B563BAF7273A50AE00DA9D23 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B563BB08273AE9BD00DA9D23 /* UIKitElements */ = {
+			isa = PBXGroup;
+			children = (
+				B563BB03273A5F4600DA9D23 /* UIKitSlider.swift */,
+			);
+			path = UIKitElements;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B563BAF6273A50AC00DA9D23 /* ContentView.swift in Sources */,
+				B563BB04273A5F4600DA9D23 /* UIKitSlider.swift in Sources */,
 				B563BAF4273A50AC00DA9D23 /* UIKitSliderInSwiftUIApp.swift in Sources */,
+				B563BB02273A52A100DA9D23 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
