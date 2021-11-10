@@ -18,7 +18,7 @@ struct UIKitSlider: UIViewRepresentable {
         slider.minimumValue = 0
         slider.maximumValue = 100
         slider.thumbTintColor = UIColor(.red)
-            .withAlphaComponent(CGFloat(Float(computeScore())/100))
+            .withAlphaComponent(CGFloat(computeScore())/100)
         
         slider.addTarget(
             context.coordinator,
@@ -31,7 +31,7 @@ struct UIKitSlider: UIViewRepresentable {
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.value = Float(currentValue)
         uiView.thumbTintColor = UIColor(.red)
-            .withAlphaComponent(CGFloat(Float(computeScore())/100))
+            .withAlphaComponent(CGFloat(computeScore())/100)
     }
     
     func makeCoordinator() -> Coordinator {
