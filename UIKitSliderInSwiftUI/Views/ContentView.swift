@@ -30,12 +30,6 @@ struct ContentView: View {
             }
         }
     }
-    
-    private func thumbTintOpacity() -> Float {
-        Float(targetValue) - currentValue
-    }
-    
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
