@@ -9,16 +9,16 @@ import SwiftUI
 
 struct UIKitSlider: UIViewRepresentable {
     
-    @Binding var targetValue: Int
     @Binding var currentValue: Float
+    
+    let alfa: Int
+    let color: UIColor
     
     func makeUIView(context: Context) -> UISlider {
         
         let slider = UISlider()
         slider.minimumValue = 0
         slider.maximumValue = 100
-        slider.thumbTintColor = UIColor(.red)
-            .withAlphaComponent(CGFloat(computeScore())/100)
         
         slider.addTarget(
             context.coordinator,
@@ -30,28 +30,20 @@ struct UIKitSlider: UIViewRepresentable {
     
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.value = Float(currentValue)
-        uiView.thumbTintColor = UIColor(.red)
-            .withAlphaComponent(CGFloat(computeScore())/100)
+        uiView.thumbTintColor = color.withAlphaComponent(CGFloat(alfa) / 100)
     }
     
     func makeCoordinator() -> Coordinator {
-        Coordinator(targetValue: $targetValue, currentValue: $currentValue)
-    }
-    
-    private func computeScore() -> Int {
-        let difference = abs(targetValue - lround(Double(currentValue)))
-        return 100 - difference
+        Coordinator(currentValue: $currentValue)
     }
 }
 
 extension UIKitSlider {
     class Coordinator: NSObject {
         
-        @Binding var targetValue: Int
         @Binding var currentValue: Float
         
-        init(targetValue: Binding<Int>, currentValue: Binding<Float>) {
-            self._targetValue = targetValue
+        init(currentValue: Binding<Float>) {
             self._currentValue = currentValue
         }
         
@@ -63,6 +55,6 @@ extension UIKitSlider {
 
 struct UIKitSlider_Previews: PreviewProvider {
     static var previews: some View {
-        UIKitSlider(targetValue: .constant(10), currentValue: .constant(10))
+        UIKitSlider(currentValue: .constant(10), alfa: 1, color: .red)
     }
 }

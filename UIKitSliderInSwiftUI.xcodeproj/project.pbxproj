@@ -11,7 +11,6 @@
 		B563BAF6273A50AC00DA9D23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BAF5273A50AC00DA9D23 /* ContentView.swift */; };
 		B563BAF8273A50AE00DA9D23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B563BAF7273A50AE00DA9D23 /* Assets.xcassets */; };
 		B563BAFB273A50AE00DA9D23 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B563BAFA273A50AE00DA9D23 /* Preview Assets.xcassets */; };
-		B563BB02273A52A100DA9D23 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BB01273A52A100DA9D23 /* ButtonView.swift */; };
 		B563BB04273A5F4600DA9D23 /* UIKitSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563BB03273A5F4600DA9D23 /* UIKitSlider.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,7 +20,6 @@
 		B563BAF5273A50AC00DA9D23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B563BAF7273A50AE00DA9D23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B563BAFA273A50AE00DA9D23 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B563BB01273A52A100DA9D23 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		B563BB03273A5F4600DA9D23 /* UIKitSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,7 +82,6 @@
 			isa = PBXGroup;
 			children = (
 				B563BAF5273A50AC00DA9D23 /* ContentView.swift */,
-				B563BB01273A52A100DA9D23 /* ButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,7 +175,6 @@
 				B563BAF6273A50AC00DA9D23 /* ContentView.swift in Sources */,
 				B563BB04273A5F4600DA9D23 /* UIKitSlider.swift in Sources */,
 				B563BAF4273A50AC00DA9D23 /* UIKitSliderInSwiftUIApp.swift in Sources */,
-				B563BB02273A52A100DA9D23 /* ButtonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
